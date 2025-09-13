@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--ICS20 Unit 1-05-->
+<html lang="en-ca">
+  <head> <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8">
+    <meta name="description" content=" My first webpage, with proper style">
+    <meta name="keywords content=trh, icd2o">
+    <meta name="author" content="santhosh">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.amber-light_blue.min.css" />
+    <title>Hi Google</title>
+  </head>
+<style>
+    #my-header {
+      background-color: rgb(255, 165, 0);
+      color: hsl(147, 50%, 47%);
+      padding: 40px;
+      text-align: center;
+    }
+  </style>
+  <body style="background-color:rgb(240, 242, 255);">
+    <h1 id="my header>Style is important"h1>
+    <p style="background-color:#ff00ff;">Proper HTML Style is important</p>
+    <img src="./HTML-style-guide.jpeg" alt="style">
+    <p>
+       <a href="./cities.html">my cities Page</a>
+    </p>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!-- Simple Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="sample1">
+    <label class="mdl-textfield__label" for="sample1">Text...</label>
+  </div>
+</form>
+<!-- Numeric Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+    <label class="mdl-textfield__label" for="sample2">Number...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
+<!-- FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab">
+  <i class="material-icons">add</i>
+</button>
+<!-- FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+  <i class="material-icons">add</i>
+</button>
+<!-- Disabled FAB button -->
+<button class="mdl-button mdl-js-button mdl-button--fab" disabled>
+  <i class="material-icons">add</i>
+</button>
+  </body>
+</html>
