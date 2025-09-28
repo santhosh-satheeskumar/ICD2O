@@ -1,15 +1,17 @@
-// Search function
-document.getElementById('searchButton').addEventListener('click', () => {
-  const field = document.getElementById('userInput');
-  const q = (field.value || '').trim();
-  const url = 'https://www.google.com/search?q=' + encodeURIComponent(q);
-  window.open(url, '_blank');
+const button = document.getElementById("searchButton");
+const input = document.getElementById("userInput");
+
+button.addEventListener("click", () => {
+  const query = input.value.trim();
+  if (query) {
+    window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+  }
 });
 
-// Clear button
-const clearBtn = document.getElementById('clearButton');
-clearBtn.addEventListener('click', () => {
-  const field = document.getElementById('userInput');
-  field.value = '';
-  field.focus();
+// Allow pressing Enter to search too
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    button.click();
+  }
 });
+
