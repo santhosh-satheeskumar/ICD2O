@@ -1,0 +1,40 @@
+body {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+.main-heading {
+  text-align: center;
+  color: #d14646;
+  margin-top: 40px;
+}
+
+.intro {
+  text-align: center;
+  color: #ff0000;
+}
+
+.demo-card.mdl-card {
+  width: 100%;
+  margin: 24px 0;
+}
+
+img {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 8px;
+  margin: auto;
+  display: block;
+}
+
+.tips-list {
+  background-color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+#site-title {
+  letter-spacing: 0.5px;
+}

@@ -4,4 +4,7 @@ selector {
 p {
   color: red;
   text-align: center;
+}
+    p {}
   
+    highlight {}
